@@ -1,0 +1,100 @@
+body {
+    font-family: 'Indie Flower', cursive;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: #ffe6e6;
+}
+
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    font-family: 'Pacifico', cursive;
+}
+
+.popup p {
+    margin-bottom: 20px;
+}
+
+.popup button {
+    font-size: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
+
+.envelope {
+    position: relative;
+    width: 1000px;
+    height: 400px;
+    background: #ffcccc;
+    margin: 50px auto;
+    border: 2px solid #ff99cc;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.envelope-top {
+    position: absolute;
+    top: 1%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100 px;
+    height: 30 px;
+    background: #ff99cc;
+    text-align: center;
+    top: 1%;
+    line-height: 30px;
+    font-size: 16px;
+    font-family: 'Pacifico', cursive;
+    color: blue;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.envelope-flap {
+    position: absolute;
+    top: -10px;
+    left: 0;
+    width: 100%;
+    height: 20px;
+    background: #ff99cc;
+    border-radius: 10px;
+}
+
+.letter {
+    margin-top: 40px;
+    font-size: 18px;
+    font-family: 'comic sans ms', cursive;
+    animation: slideUp 1s forwards;
+    padding: 10px;
+    overflow-wrap: avabreak-word;
+}
+
+@keyframes slideUp {
+    from { transform: translateY(100%); }
+    to { transform: translateY(0); }
+}
+
+#flowers {
+    margin-top: 20px;
+    animation: fadeIn 3s ease-in-out 5s;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}

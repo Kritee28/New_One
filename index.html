@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Special Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Indie+Flower|Pacifico&display=swap">
+</head>
+<body>
+    <script>
+        var password = prompt("Enter the password:");
+        if (password !== "Saranghae") {
+            document.body.innerHTML = "<h1 style='color: red; text-align: center;'>Access Denied!</h1>";
+        } else {
+            // Show the content if the password is correct
+            document.body.innerHTML = `
+                <div id="popup" class="popup">
+                    <p>Happieeee one month, Baby... ❤️ I love you so much, Love 🤌🏻💕...</p>
+                    <button onclick="closePopup()">Click</button>
+                </div>
+
+                <div id="envelope" class="hidden envelope">
+                    <div class="envelope-top">Open</div>
+                    <div class="envelope-flap"></div>
+                    <div class="letter hidden">
+                        Dear Piyush,<br><br>
+                        To jaisa ki aap jaante hain ki hamein one month ho chuka hai ek dusre ko jhele hue to happiee one month buddy... And I love you so much... 😘<br>
+                        And mai kya likhu.. samajh hi nahi aa raha... Par mujhe yakeen nahi hota ki maine kaise jhel liya tujhe ek mahine... abhi to aur kayi saal jhelna hai 🤧.... Par koi na tujhe to mai khushi khushi sambhaal lu 😁.... I know bohot zyaada lade hum... Sachi me bohot zyaada, bala itna koi ladta hai kya 🥲... Par phir theek hai wo to mai sab sort kar deti hu 🙂....<br>
+                        Chalo.. Ab Mr., thoda kam ladna aur haan, aane ke baad to tujhse achhe se celebrate karwaaungi... Ye mat soch online me bach gaya 😏...<br>
+                        Zyada kuchh nahi love youu mere chhote bachche...... 😘💕<br><br>
+                        Apki pyaari,<br>
+                        Kritee 😌
+                    </div>
+                </div>
+
+                <div id="flowers" class="hidden">
+                    <img src="flowers.png" alt="Flowers" style="width: 150px;">
+                    <img src="chocolate.png" alt="Chocolate" style="width: 150px;">
+                </div>
+            `;
+        }
+    </script>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
